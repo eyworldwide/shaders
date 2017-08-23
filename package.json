@@ -1,0 +1,33 @@
+{
+  "name": "@ali/xxx",
+  "version": "0.0.1",
+  "description": "xxx",
+  "main": "build/main.js",
+  "author": "qianwei.xqw",
+  "repository": "http://gitlab.alibaba-inc.com/fdilab/xxx",
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
+  },
+  "scripts": {
+    "dev": "rollup -c --watch",
+    "reload": "livereload 'build/'",
+    "watch": "npm-run-all --parallel dev reload"
+  },
+  "devDependencies": {
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "livereload": "^0.6.2",
+    "npm-run-all": "^4.0.2",
+    "rollup": "^0.45.0",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-eslint": "^4.0.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-replace": "^1.1.1",
+    "rollup-plugin-uglify": "^2.0.1",
+    "rollup-watch": "^4.0.0"
+  },
+  "dependencies": {
+    "event-emitter": "^0.3.5",
+    "stats-js": "^1.0.0-alpha1"
+  }
+}
